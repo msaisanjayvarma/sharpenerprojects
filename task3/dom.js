@@ -1,4 +1,7 @@
-document.getElementById('main-header').style.borderBottom = 'solid 3px #000';
-let title = document.getElementsByClassName('title');
-title[0].innerHTML='<b>Add Items</b>';
-title[0].style.color='green';
+
+let classList = document.querySelectorAll('.list-group-item');
+
+classList[2].style.backgroundColor='green';
+classList.forEach((li)=>{
+    li.style.fontWeight='bold';
+});
