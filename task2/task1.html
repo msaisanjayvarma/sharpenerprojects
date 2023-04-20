@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('https://hs-marketing-contentful.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fp15sglj92v6o%2F16jbT2llrCofKlH2GXdN7T%2F69baf98988548169906231f8c8e2e244%2Fcustomer-service-statistics.jpg?ixlib=gatsbySourceUrl-2.0.2&auto=format%2C%20compress&s=012d082cc3228fb90a7b4330dfc54535');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .bck::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.1);
+      background-size: cover;
+    }
+
+    div.First {
+      background-color: rgb(235, 141, 79);
+      padding-left: 1%;
+      padding-right: 1%;
+      padding-bottom: 1%;
+      margin-top: 1%;
+      margin-left: 30%;
+      margin-right: 30%;
+      position: fixed;
+    }
+
+    div.second {
+      text-align: center;
+      color: aliceblue;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 80px;
+      font-stretch: extra-condensed;
+      position: absolute;
+      top: -20px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: -1;
+      opacity: 0.2;
+      backdrop-filter: blur(8px) brightness(70%);
+    }
+
+    .b1 {
+      margin-top: 2%;
+      position: absolute;
+    }
+
+    .b2 {
+      margin-top: 2%;
+      margin-left: 85%;
+      position: absolute;
+    }
+
+    .b3 {
+      margin-top: 2%;
+      margin-left: 92%;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bck" class="bg-dark shadow-2-strong"> 
+  <div class="container form-control-sm">
+    <u class="b1"><button style="font-size: 20px;background-color:yellow;">JingleBell</button></u>
+    <p class="b2"><button style="font-size: 20px;background-color: yellowgreen;">Register</button></p>
+    <p class="b3"><button style="font-size: 20px;background-color: yellowgreen;">Login</button></p>
+    <div class="First">
+      <div class="second">
+        <p>Call</p>
+        <i class="fab fa-twitter" 
+          <p style="text-align:center;font-size:35px;color:rgb(52, 12, 99)">Book a call</p>
+          <p style="text-align: center;color:darkslateblue;font-size: 19px;">Book a call now and our representative will
+            call you back at the selected time</p>
+          <hr>
+          <form onsubmit="consoleFormData(event)">
+            <label for="Name">Name:</label><br>
+            <input id="Name" type="text" name="Name" style="width: 700px;"><br><br>
+            <label for="Name">Email:</label><br>
+            <input id="Email" type="email" name="Email" style="width: 700px;"><br><br>
+            <label for="Phone">Phoebe:</label><br>
+            <input id="Phone" type="tel" name="Phone" style="width: 700px;"><br><br>
+            <label for="TimeForCall">Time For Call:</label><br>
+            <input id="Date" type="date" name="Date" style="width:345px;">
+            <input id="Time" type="time" name="Time" style="width:345px;"><br><br><br>
+            <input type="submit" value="Get a call"
+              style="width: 700px;color:red;font-size: 20px;background-color:rgb(255, 235, 170);">
+          </form>
+      </div>
+    </div>
+  </div>
+    <script>
+      function consoleFormData(event) {
+        event.preventDefault();
+        console.log(event.target.Name.value);
+        console.log(event.target.Email.value);
+        console.log(event.target.Phone.value);
+        console.log(event.target.Date.value);
+        console.log(event.target.Time.value);
+      }
+    </script>
+</body>
+z
+</html>
